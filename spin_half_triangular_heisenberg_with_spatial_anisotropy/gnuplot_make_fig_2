@@ -1,0 +1,11 @@
+set xrange [:]
+set yrange [0:]
+set xlabel "J_2/J_1"
+set ylabel "magnetization"
+
+set term png
+set output "fig_2_mag.png"
+
+set label 1 "See Fig.3 in DOI:10.1088/0953-8984/11/14/012" at graph 0.1,0.9
+
+p "dat" u 3:5 w lp ti ""

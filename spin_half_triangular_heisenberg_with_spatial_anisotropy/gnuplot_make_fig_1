@@ -1,0 +1,13 @@
+set xrange [:]
+set yrange [:]
+set xlabel "J_2/J_1"
+set ylabel "energy"
+
+set term png
+set output "fig_1_ene.png"
+
+set label 1 "See Fig.2 in DOI:10.1088/0953-8984/11/14/012" at graph 0.1,0.1
+
+p \
+"dat" u 3:6 w lp ti "classical", \
+"dat" u 3:7 w lp ti "S=1/2"
